@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="my.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Go-Connéction</title>
+  </head>
+
+  <body>
+    <div class="loaded">
+      <span class="lettre">C</span>
+      <span class="lettre">H</span>
+      <span class="lettre">A</span>
+      <span class="lettre">R</span>
+      <span class="lettre">G</span>
+      <span class="lettre">E</span>
+      <span class="lettre">M</span>
+      <span class="lettre">E</span>
+      <span class="lettre">N</span>
+      <span class="lettre">T</span>
+    </div>
+    <div class="container pt-5">
+      <div class="row mx-2">
+        <div class="table" id="table">
+          <div class="col-" align="center">
+            <div class="fomr-head pb-3" id="form-head">GO.Login</div>
+          </div>
+          <div class="col-">
+            <div class="tabs">
+              <ul>
+                <li class="login__li">Se connécter</li>
+                <li class="inscription__li">S'inscrire</li>
+              </ul>
+            </div>
+          </div>
+          <form method="post" class="login">
+            <div class="message form--hidden"></div>
+            <div class="col- px-3 pt-2">
+              <label for="nom"> <b>Nom d'utilisateur</b> </label>
+              <input
+                type="text"
+                class="nom input-field"
+                autofocus
+                placeholder="Nom d'utilisateur"
+              />
+            </div>
+            <div class="col- px-3 pt-2">
+              <label for="mdp"> <b>Mot de passe</b> </label>
+              <input
+                type="password"
+                class="mdp input-field"
+                autofocus
+                placeholder="Mot de passe"
+              />
+            </div>
+            <div class="col- pt-2" align="center">
+              <a href="#" class="form__link" align="center"
+                >Mot de passe oublié?</a
+              >
+            </div>
+            <div class="col- pt-2" align="center">
+              <button class="btn btn-primary button" type="submit">
+                Confirmer
+              </button>
+            </div>
+          </form>
+          <form method="post" class="inscription">
+            <div class="message form--hidden"></div>
+            <div class="col- px-3 pt-2">
+              <label for="nom"> <b>Nom d'utilisateur</b> </label>
+              <input
+                type="text"
+                class="nom__inscription input-field"
+                autofocus
+                placeholder="Nom d'utilisateur"
+              />
+            </div>
+            <div class="col- px-3 pt-2">
+              <label for="mdp"> <b>Mot de passe</b> </label>
+              <input
+                type="password"
+                class="mdp__inscription input-field"
+                autofocus
+                placeholder="Mot de passe"
+              />
+            </div>
+            <div class="col- px-3 pt-2">
+              <label for="mdp"> <b>Confirmer le mot de passe</b> </label>
+              <input
+                type="password"
+                class="confirme__inscription input-field"
+                autofocus
+                placeholder="Confirmer le mot de passe"
+              />
+            </div>
+            <div class="col- pt-2" align="center">
+              <button class="btn btn-primary button" type="submit">
+                Confirmer
+              </button>
+            </div>
+          </form>
+          <form method="post" class="reset">
+            <div class="message form--hidden"></div>
+            <div class="col- px-3 pt-2">
+              <label for="nom"> <b>Nom d'utilisateur</b> </label>
+              <input
+                type="text"
+                class="reset__inscription input-field"
+                autofocus
+                placeholder="Nom d'utilisateur"
+              />
+            </div>
+            <div class="col- px-3 pt-2">
+              <label for="mdp"> <b>Mot de passe</b> </label>
+              <input
+                type="password"
+                class="reset__inscription input-field"
+                autofocus
+                placeholder="Mot de passe"
+              />
+            </div>
+            <div class="col- px-3 pt-2">
+              <label for="mdp"> <b>Confirmer le mot de passe</b> </label>
+              <input
+                type="password"
+                class="reset__inscription input-field"
+                autofocus
+                placeholder="Confirmer le mot de passe"
+              />
+            </div>
+            <div class="col- pt-2" align="center">
+              <button class="btn btn-primary button" type="submit">
+                Confirmer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="message.js"></script>
+    <script src="anime.js"></script>
+    <script src="loaded.js"></script>
+  </body>
+</html>

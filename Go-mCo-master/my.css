@@ -1,0 +1,260 @@
+body {
+
+
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --border-radius: 4px;
+
+  margin: 0;
+  height: 100vh;
+  background: url(./1079105.jpg) fixed center/cover no-repeat;
+}
+
+.col- .table {
+  padding: 20px;
+}
+
+.table {
+  border-spacing: initial;
+  margin: 10px auto;
+  line-height: 1.8em;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid;
+  border-color: khaki;
+  box-shadow: 10px 15px 20px rgb(15, 15, 15);
+  background-color: #ffffff !important;
+}
+
+
+.tabs ul {
+  text-align: center;
+}
+
+.tabs ul li {
+  display: inline-block;
+  margin: 5px 25px 0px 0px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.tabs ul li.active {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+#table {
+  width: 500px;
+  background: none;
+}
+
+label {
+  color: var(--color-secondary);
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-primary-dark);
+  outline: none;
+  background: #ffffff;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.input-field::placeholder {
+  color: #333;
+}
+
+
+.button {
+  width: 90%;
+  height: 50px;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary) !important;
+}
+
+.button:hover {
+  background: var(--color-primary-dark);
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+#form-head {
+  color: var(--color-primary);
+  font-weight: normal;
+  font-weight: 10px;
+  margin: 0px;
+  font-size: 1.8em;
+}
+
+.message {
+  text-align: center;
+  margin: 0;
+}
+
+.message-success {
+  color: var(--color-primary);
+
+}
+
+.message-error {
+  color: var(--color-error);
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+.form__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lettre {
+  font-size: 35px;
+  letter-spacing: 10px;
+  color: var(--color-primary);
+  animation: lettre 1.2s linear infinite;
+}
+
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.out {
+  display: none;
+}
+
+.form--hidden {
+  display: none;
+}
+
+
+@keyframes lettre {
+  0% {
+    color: var(--color-secondary);
+    text-shadow: 0 0 7px var(--color-secondary);
+  }
+
+  90% {
+    color: var(--color-primary);
+    text-shadow: none;
+  }
+
+  100% {
+    color: var(--color-secondary);
+    text-shadow: var(--color-secondary);
+  }
+}
+
+.loaded {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--color-primary);
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--color-primary);
+}
+
+.out {
+  display: none;
+}
+
+.dashboard {
+  background: #ffffff;
+  margin: 15px;
+  line-height: 1.8em;
+  color: var(--color-secondary);
+  border-radius: 4px;
+  padding: 30px;
+  border: rgb(241, 237, 245) 1px solid;
+  max-width: 400px;
+}
+
+.logout {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+
+@media screen and (max-width : 500px) {
+
+  .loader,
+  .loaded {
+    width: 360px;
+  }
+}
